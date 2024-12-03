@@ -20,5 +20,5 @@ class Product(Base):
     is_active = Column(Boolean, default=True)
     category = relationship('Category', back_populates='products')   ### - связывает сущности между собой 1 - 1
 
-from sqlalchemy.schema import CreateTable
-print(CreateTable(Product.__table__))
+        # from sqlalchemy.schema import CreateTable    ### - УДАЛИТЬ
+        # print(CreateTable(Product.__table__))        ### - УДАЛИТЬ

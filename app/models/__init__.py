@@ -2,9 +2,9 @@
 ### - 30.11.24
 from .category import Category
 from .products import Product
-from app.backend.db import Base, engine                   ### - имторт класса Base и переменной engine из файла db.py
+# from app.backend.db import Base, engine  ### - УДАЛИТЬ    ### - имторт класса Base и переменной engine из файла db.py
 
-Base.metadata.create_all(engine)
+# Base.metadata.create_all(engine)         ### - УДАЛИТЬ
 
 '''Base.metadata.create_all(engine) - выполняет создание всех таблиц, определенных в Вашей модели данных, в базе данных, 
 к которой подключен объект engine. Давайте разобьем это на части для лучшего понимания:
